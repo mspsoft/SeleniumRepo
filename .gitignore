@@ -1,0 +1,6 @@
+/target/*
+/ExtentReport/*
+/test-output/*
+/Screenshots/*
+/doc/*
+/target/

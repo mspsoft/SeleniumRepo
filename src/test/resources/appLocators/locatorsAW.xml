@@ -1,0 +1,30 @@
+<pages>
+    <page name="login">
+        <locator name="userName">//input[@name='username']</locator>
+        <locator name="password">//input[@name='password']</locator>
+        <locator name="signIn">//button[text()='Sign in']</locator>
+        <locator name="loginProfile">//div[contains(@class,'global-navigation-toolbar')]//button[contains(@class,'sw-avatar-generic')]</locator>
+        <locator name="signOut">//div[contains(@class,'global-navigation')]//aside[contains(@class,'aw-sidenav-layoutContainer')]//button[@aria-label='Sign Out']</locator>
+        <locator name="tcHomePage">//div[@class='sw-row flex-auto sw-header-titleContainer']//h1[text()='Teamcenter']</locator>
+    </page>
+    <page name="home">
+        <locator name="cmdbtn">//div[contains(@class,'aw-commands-commandBarVertical')]//button[@aria-label='{commandName}']</locator>
+    </page>
+        <page name="panel">
+        <locator name="panelroot">//div[@class='sw-popup-contentContainer']//div[contains(@class,'sw-command-panelContent')]</locator>
+        <locator name="fltrsearchBox">//div[@class='sw-lov-container']/input[@aria-label='{propertyName}']</locator>
+        <locator name="itemlocator">//div[contains(@class,'sw-section-content')]/label//span[contains(@data-locator,'{propertyName}')]</locator>
+        <locator name='selectlistBox'>//div[contains(@class,'sw-popup-contentContainer')]//ul/li//div[@title='{propertyName}']</locator>
+        <locator name='filterBox'>//div[contains(@class,'aw-widgets-cellListItem')]//div[contains(@class,'sw-cell-valName') and @title='{textToFilter}']</locator>
+        <locator name='propertyVal'>//input[contains(@data-locator,'{propertyName}') and @class='sw-property-val'] | //textarea[contains(@data-locator,'{propertyName}') and @class='sw-property-val']</locator>
+        <locator name='propertylistBox'>//input[contains(@data-locator,'{propertyName}') and contains(@class,'sw-property-val')]</locator>
+        <locator name='selectLovValue'>//li/div[contains(@class,'aw-widgets-cellListItem')]//div[contains(@title,'{desiredValue}')][1]</locator>
+        <locator name='panelFooterButtonLocator'>//div[contains(@class,'aw-panel-footer')]/button/div[contains(text(),'{buttonName}')]</locator>                       
+    </page>  
+    <page name="search">
+        <locator name="filtersearchBox">//div[@class='sw-popup-contentContainer']//input[contains(@class,'sw-property-val')]</locator>
+    </page>  
+    <page name="createObject">        
+        <locator name="pageroot">//main[@class='aw-layout-workareaMain']////div[contains(@class,'aw-layout-panelBody')]</locator>
+    </page>      
+</pages>
